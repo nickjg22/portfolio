@@ -4,19 +4,10 @@ import React from "react";
 import styles from "./Button.module.css";
 
 // import dependencies
-import {clsx} from "clsx";
+import { clsx } from "clsx";
 import Link from "next/link";
 
-export const Button = (
-  {
-    href,
-    color,
-    disabled,
-    handleClick,
-    children,
-    customClasses,
-    ...props
-  }) => {
+export const Button = ({ href, color, disabled, handleClick, children, customClasses, ...props }) => {
   const classes = clsx(
     styles.button,
     {
@@ -27,12 +18,12 @@ export const Button = (
       [styles.buttonDisabled]: disabled,
     },
     // custom classes
-    customClasses
+    customClasses,
   );
 
   if (href) {
     return (
-      <Link href={disabled ? '' : href} onClick={handleClick} className={classes} {...props}>
+      <Link href={disabled ? "" : href} onClick={handleClick} className={classes} {...props}>
         {children}
       </Link>
     );

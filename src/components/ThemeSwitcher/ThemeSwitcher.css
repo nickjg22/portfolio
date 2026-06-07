@@ -1,0 +1,25 @@
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+:global(.dark) .btn {
+  border-color: #4b5563;
+  background-color: #1e293b;
+  color: #f3f4f6;
+}
+
+.btn:hover {
+  background-color: #f3f4f6;
+}
+
+:global(.dark) .btn:hover {
+  background-color: #334155;
+}
