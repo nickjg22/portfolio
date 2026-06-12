@@ -81,18 +81,18 @@ export default function Home() {
 
       {/* MAIN CONTENT SECTION - RESPONSIVE GRID LAYOUT */}
       <main className="max-w-6xl w-full mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-8 my-4 flex-grow">
-        {/* Left Column: Projects Feed */}
+        {/* Left Column: Projects Feed con inyección de colores de texto */}
         <section className="md:col-span-2 flex flex-col gap-6">
           <h2 className="text-2xl font-bold border-b pb-2 border-gray-100 dark:border-slate-800">Featured Projects</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 [&>.project-card_h2]:text-gray-900 [&>.project-card_h2]:dark:text-white [&>.project-card_p]:text-gray-600 [&>.project-card_p]:dark:text-gray-200 [&>.project-card_a]:text-blue-500">
             {projects.map((proj, index) => (
               <ProjectCard key={index} logo={proj.logo} name={proj.name} content={proj.content} link={proj.link} />
             ))}
           </div>
         </section>
 
-        {/* Right Column: Information Widgets */}
-        <aside className="flex flex-col gap-6">
+        {/* Right Column: Information Widgets con control estricto de texto en modo oscuro */}
+        <aside className="flex flex-col gap-6 [&_h2]:text-gray-900 [&_h2]:dark:text-white [&_p]:text-gray-600 [&_p]:dark:text-gray-300 [&_span]:text-gray-900 [&_span]:dark:text-gray-100 [&_.work-widget]:text-gray-900 [&_.work-widget]:dark:text-gray-100">
           <WorkWidget title="Work" content="My professional path and experience." experiences={experiences} />
           <SkillsWidget title="Skills" content="My technical stack and expertise levels." skills={skills} />
         </aside>
