@@ -21,6 +21,7 @@ export default function Projects() {
     { title: "Home", url: "/" },
     { title: "About", url: "/about" },
     { title: "Projects", url: "/projects" },
+    { title: "Uses", url: "/uses" }, // <-- Añade esta línea
   ];
 
   // Datos de tus proyectos reales y retos para poblar la vista

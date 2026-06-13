@@ -60,6 +60,7 @@ export default function Home() {
     { title: "Home", url: "/" },
     { title: "About", url: "/about" },
     { title: "Projects", url: "/projects" },
+    { title: "Uses", url: "/uses" },
   ];
 
   return (
