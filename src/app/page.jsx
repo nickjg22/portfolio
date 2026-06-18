@@ -80,7 +80,7 @@ export default function Home() {
   ];
 
   const footerNavLinks = [
-    { title: "Home", url: "/" },
+    { title: "Home", url: "/portfolio/" },
     { title: "About", url: "/portfolio/about" },
     { title: "Projects", url: "/portfolio/projects" },
     { title: "Uses", url: "/portfolio/uses" },
